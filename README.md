@@ -24,12 +24,14 @@ Alpha-Beta pruning algorithm
  play <num_of_stones> <num_of_taken_stones> <list_of_taken_stones>
  ▪ num_of_stones : 게임에 주어진 전체 돌의 개수
  ▪ num_of_taken_stones : 가져간 돌의 개수
+ 
  0이면 게임 시작이고 Max플레이어 차례
  짝수이면 Max플레이어 차례
  홀수이면 Min플레이어 차례
  ▪ list_of_taken_stones : 가져간 돌의 리스트
  예) $ play 7 2 3 6
  두 개의 돌(3과 6)을 가지고 갔으므로 Max플레이어 차례
+ 
  ▪ 출력
  ▪ alpha-beta 알고리즘으로 계산한 최선의 돌
  ▪ alpha-beta 알고리즘으로 계산한 값
@@ -42,6 +44,7 @@ Alpha-Beta pruning algorithm
  Calculated Value : 1.0
  Number of Visited Nodes : 3
  Max Depth : 2
+ 
 ▪ Evaluation
  ▪ 게임 종료 시, Max 플레이어 승리 : 1.0
  ▪ 게임 종료 시, Min 플레이어 승리 : -1.0
@@ -62,6 +65,7 @@ Alpha-Beta pruning algorithm
  홀수면 -0.7 짝수면 0.7반환
  마지막에 소수가 아닌 돌을 가지고 간 경우, 소수의 개수를 세어서
  홀수면 -0.6 짝수면 0.6반환
+
 ▪ alpha 초기값 : -∞(negative infinity)
  beta 초기값 : ∞(positive_infinity)
 ▪ 동일한 값이 계산된 경우, 작은 숫자의 돌을 선택한다.
